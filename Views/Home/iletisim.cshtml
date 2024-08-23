@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "iletisim";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" action="/Home/IletisimGonder">
+    <div class="form-group">
+        <label for="Name">Adınız</label>
+        <input type="text" class="form-control" id="Name" name="Name" required style="width:1200px; height: 40px;" />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">E-posta Adresiniz</label>
+        <input type="email" class="form-control" id="Email" name="Email" required style="width:1200px; height: 40px;" />
+    </div>
+
+    <div class="form-group">
+        <label for="Subject">Konu</label>
+        <input type="text" class="form-control" id="Subject" name="Subject" required style="width:1200px; height: 40px;" />
+    </div>
+
+    <div class="form-group">
+        <label for="Message">Mesajınız</label>
+        <textarea class="form-control" id="Message" name="Message" rows="4" required style="width:1200px; height: 40px;"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-color: #ADD8E6; /* Hakkımızda sayfası arka plan rengi */
+        }
+
+    </style>
+</head>
+<body>
+</body>
+</html>

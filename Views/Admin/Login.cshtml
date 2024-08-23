@@ -1,0 +1,27 @@
+﻿<form method="post" asp-action="Login">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Sign In </h2>
+
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-laptop-user-icon-download-in-svg-png-gif-file-formats--workplace-office-employee-businessman-flat-business-icons-1-pack-1179329.png?f=webp&w=256" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <input type="text" id="Email" class="fadeIn second" name="email" placeholder="Email" >
+            <input type="password" id="Password" class="fadeIn third" name="password" placeholder="Password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+
+
+        </div>
+    </div>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+

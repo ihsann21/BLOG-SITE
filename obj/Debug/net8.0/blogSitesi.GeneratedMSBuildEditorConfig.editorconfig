@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = blogSitesi
+build_property.RootNamespace = blogSitesi
+build_property.ProjectDir = c:\Users\ihsann\Documents\GitHub\BLOG-S-TE\blogSitesi\blogSitesi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\ihsann\Documents\GitHub\BLOG-S-TE\blogSitesi\blogSitesi
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQW5hc2F5ZmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbmFzYXlmYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/AnonimYaz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbm9uaW1ZYXouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/BlogOnay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nT25heS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Guncel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHdW5jZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Hakkımızda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtrxLFtxLF6ZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/iletisimOnay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbGV0aXNpbU9uYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/kayıtIslem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxrYXnEsXRJc2xlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Muzik.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNdXppay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ihsann/Documents/GitHub/BLOG-S-TE/blogSitesi/blogSitesi/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-10mmuxatpg

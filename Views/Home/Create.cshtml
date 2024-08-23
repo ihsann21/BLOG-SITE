@@ -1,0 +1,44 @@
+﻿@model blogSitesi.Models.BlogPost
+
+@{
+    ViewData["Title"] = "Yeni Anonim Yazı";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" style="width: 1200px;  />
+        <span asp-validation-for="Title" class="text-danger" ></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Content" class="control-label"></label>
+        <input asp-for="Content" class="form-control" rows="5" style="width: 1200px;></textarea>
+        <span asp-validation-for="Content" class="text-danger" ></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CreatedDate" class="control-label"></label>
+        <input asp-for="CreatedDate" class="form-control" type="date" style="width: 1200px;  />
+        <span asp-validation-for="CreatedDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UpdatedDate" class="control-label"></label>
+        <input asp-for="UpdatedDate" class="form-control" type="date" style="width: 1200px;  />
+        <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImagePath" class="control-label"></label>
+        <input asp-for="ImagePath" class="form-control" style="width: 1200px; />
+        <span asp-validation-for="ImagePath" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Yazıyı oluştur" class="btn btn-primary" style="display: inline-block; margin-right: 10px;" />
+
+    </div>
+</form>

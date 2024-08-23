@@ -1,0 +1,125 @@
+﻿
+
+@model IEnumerable<BlogPost>
+
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anasayfa</title>
+</head>
+<body>
+    <h1>Blog Yazıları</h1>
+    <div>
+        @foreach (var post in Model)
+        {
+            <div class="blog-post">
+                <h2>@post.Title</h2>
+                <p>@post.Content</p>
+                @if (!string.IsNullOrEmpty(post.ImagePath))
+                {
+                    <img src="@post.ImagePath" alt="Blog Post Image" />
+                }
+                <p><small>@post.CreatedDate.ToString("dd MMM yyyy")</small></p>
+            </div>
+        }
+    </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-color: white; /* Hakkımızda sayfası arka plan rengi */
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sitem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            header a {
+                color: white;
+                text-decoration: none;
+                margin-right: 20px;
+                font-weight: bold;
+            }
+
+        .search-container {
+            position: absolute;
+            right: 20px;
+        }
+
+            .search-container input[type="text"] {
+                padding: 6px;
+                font-size: 16px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            .search-container button {
+                padding: 6px;
+                font-size: 16px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                .search-container button:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+  
+    <!-- Sayfa İçeriği -->
+</body>
+</html>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}

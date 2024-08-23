@@ -1,0 +1,213 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 1000%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+    body.hakkimizda-page {
+        background-color: #d4edda; /* Ýletiþim sayfasý arka plan rengi */
+    }
+
+/* Genel Stil Ayarlarý */
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+/* site.css dosyanýz */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Ana içerik alanýnýn esnemesine izin verir */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1px;
+    text-align: center;
+}
+
+/* Bu, footer'ýn sayfanýn en altýnda olmasýný saðlar ve içeriði aþaðýya itebilir */
+.content {
+    min-height: 200px; /* Ýçeriðin boyutunu artýrýn */
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+/* Blog Baþlýðý */
+.blog-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .blog-header .blog-header-logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+/* Navigasyon Menüsü */
+.nav-scroller {
+    background-color: #6c757d;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+    .nav-scroller .nav a {
+        color: #fff;
+        padding: 0.5rem 1rem;
+    }
+
+        .nav-scroller .nav a:hover {
+            color: #e9ecef;
+        }
+
+/* Ana Ýçerik Alaný */
+.blog-main {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Blog Yazýlarý */
+.blog-post-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog-post-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Yan Sütun */
+.blog-sidebar {
+    padding: 10px;
+}
+
+    .blog-sidebar .p-3 {
+        background-color: #f8f9fa;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .blog-sidebar h4 {
+        font-weight: bold;
+    }
+
+/* Footer */
+.blog-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 40px;
+}
+
+    .blog-footer a {
+        color: #17a2b8;
+    }
+
+        .blog-footer a:hover {
+            color: #138496;
+        }
+
+.search-container {
+    position: absolute;
+    right: 60px;
+}
+
+    .search-container input[type="text"] {
+        padding: 10px; /* Ýç boþluðu artýrdým */
+        font-size: 18px; /* Yazý boyutunu artýrdým */
+        margin-left: -80px;
+        width: 120px; /* Geniþliði artýrdým */
+        border: none;
+        border-radius: 4px;
+        background-color: white; /* Arka plan rengi */
+        color: black; /* Yazý rengini siyah yaptým */
+    }
+
+    .search-container button {
+        padding: 10px; /* Ýç boþluðu artýrdým */
+        width: 120px; /* Geniþliði artýrdým */
+        font-size: 18px; /* Yazý boyutunu artýrdým */
+        background-color: #4CAF50; /* Yeþil arka plan rengi */
+        color: white; /* Yazý rengi */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.content-column {
+    max-width: 100%; /* Maksimum geniþlik %100 */
+    overflow-x: auto; /* Yatay kaydýrma çubuðu ekler */
+    white-space: pre-wrap; /* Satýr kaydýrmalarý ve boþluklarý korur */
+}
+
+/* Ýçerik alanýnda metin stilini ayarlamak için */
+.content-wrapper {
+    width: 800px; /* Geniþliði ayarlar */
+    margin-top: -80px; 
+    margin-bottom:-80px;
+    padding: 0px; /* Ýç boþluk */
+    word-wrap: break-word; /* Uzun kelimeleri kýrar */
+}
+.table {
+   
+    margin-left: 0; /* Tam sola yaslar */
+    /* veya */
+    margin-left: -163px; /* Sol tarafta 10px boþluk býrakýr */
+    margin-bottom:-400px;
+    margin-top:50px;
+}
+.left-align {
+    margin-left: 250px;
+    text-align: left;
+    display: block; /* Baðlantýlarýn da sola yaslanmasýný saðlamak için */
+}

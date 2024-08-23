@@ -1,0 +1,165 @@
+﻿@model IEnumerable<blogSitesi.Models.BlogPost>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyanızı buraya ekleyin -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Yatay kaydırmayı gizler */
+        }
+
+        body {
+            min-height: 100vh; /* Viewport yüksekliği kadar minimum yükseklik */
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: #000; /* Yağmur damlalarının daha iyi görünmesi için arka plan rengi */
+        }
+
+        .rain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Yağmur damlalarının etkileşimli olmaması için */
+            z-index: 1; /* İçeriğin alt katmanında kalmasını sağlar */
+        }
+
+        h1 {
+            position: relative;
+            z-index: 2; /* Yağmurdan üstte kalmasını sağlar */
+            text-align: center;
+            color: #fff;
+            margin: 1rem;
+        }
+
+        div {
+            position: relative;
+            z-index: 2; /* Yağmurdan üstte kalmasını sağlar */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .blog-post {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .blog-post img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .blog-post-content {
+            flex: 1;
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .blog-post p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas class="rain"></canvas>
+    <h1>BLOG YAZILARI</h1>
+    <div>
+        @if (Model != null)
+        {
+            @foreach (var post in Model)
+            {
+                <div class="blog-post">
+                    @if (!string.IsNullOrEmpty(post.ImagePath))
+                    {
+                        <img src="@post.ImagePath" alt="Blog Post Image" />
+                    }
+                    <div class="blog-post-content">
+                        <h2>@post.Title</h2>
+                        <p>@post.Content</p>
+                        <p><small>@post.CreatedDate.ToString("dd MMM yyyy")</small></p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Blog yazısı bulunamadı.</p>
+        }
+    </div>
+
+    <!-- Yağmur efekti için JavaScript -->
+    <script>
+        // Yağmur damlalarının özelliklerini tanımla
+        const canvas = document.querySelector('.rain');
+        const ctx = canvas.getContext('2d');
+        const drops = [];
+        const numDrops = 100;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function createDrop() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                length: Math.random() * 20 + 10,
+                speed: Math.random() * 5 + 2,
+                opacity: Math.random() * 0.2 + 0.5
+            };
+        }
+
+        function updateDrops() {
+            drops.forEach(drop => {
+                drop.y += drop.speed;
+                if (drop.y > canvas.height) {
+                    drop.y = -drop.length;
+                    drop.x = Math.random() * canvas.width;
+                }
+            });
+        }
+
+        function drawDrops() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            drops.forEach(drop => {
+                ctx.fillRect(drop.x, drop.y, 2, drop.length);
+            });
+        }
+
+        function animate() {
+            updateDrops();
+            drawDrops();
+            requestAnimationFrame(animate);
+        }
+
+        // Yağmur damlalarını oluştur
+        for (let i = 0; i < numDrops; i++) {
+            drops.push(createDrop());
+        }
+
+        animate();
+
+        // Pencere boyutunu değiştirdiğinde canvas boyutunu güncelle
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>

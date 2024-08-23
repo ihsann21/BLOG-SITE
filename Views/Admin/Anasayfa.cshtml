@@ -1,0 +1,112 @@
+﻿@model IEnumerable<blogSitesi.Models.BlogPost>
+
+
+
+<h2 class="left-align" style="color: black; font-size: 28px;">Admin Paneline Hoşgeldiniz</h2>
+<a href="@Url.Action("Anasayfa", "Home")" style="float: right;">Çıkış Yap</a>
+
+<!-- Blog postları veya diğer admin işlemleri için alan ekleyebilirsin -->
+
+<table class="table table-bordered table-striped" style="transform: scale(0.8); transform-origin: top left;">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Content
+            </th>
+            <th>
+                Created Date
+            </th>
+            <th>
+                Updated Date
+            </th>
+            <th>
+                Image Path
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Title
+                </td>
+                    <td class="content-column">
+                        <div class="content-wrapper">
+                        @item.Content
+                        </div>
+                    </td>
+                <td>
+                    @item.CreatedDate
+                </td>
+                <td>
+                    @item.UpdatedDate
+                </td>
+                <td>
+                    @item.ImagePath
+                </td>
+            </tr>
+        }
+
+</table>
+<h1>Yazı Kayıtları</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Başlık</th>
+            <th>Oluşturulma Tarihi</th>
+            <th>Güncellenme Tarihi</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.CreatedDate.ToString("dd.MM.yyyy")</td>
+                <td>@item.UpdatedDate.ToString("dd.MM.yyyy")</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div style="margin-bottom: 420px;"></div>
+<h1>Blog Yazıları</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Başlık</th>
+            <th>Tarih</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.CreatedDate.ToShortDateString()</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Düzenle</a>
+                    <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info">Detaylar</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
